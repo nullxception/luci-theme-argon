@@ -233,19 +233,10 @@ header.bg-primary {
     background-color: rgba(22, 22, 22, var(--blur-opacity-dark));
 }
 
-div>table>tbody>tr:nth-of-type(2n),
-div>.table>.tr:nth-of-type(2n) {
-    background-color: rgba(36, 36, 37, var(--blur-opacity-dark));
-}
-
 table>tbody>tr>td,
 table>tfoot>tr>td,
 table>thead>tr>td {
     color: #cccccc;
-}
-
-fieldset>table>tbody>tr:nth-of-type(2n) {
-    background-color: rgba(36, 36, 37, var(--blur-opacity-dark));
 }
 
 table>tbody>tr>td,
@@ -307,14 +298,6 @@ tr>th,
     border-top: 0;
 }
 
-.cbi-rowstyle-2 {
-    background-color: rgba(30, 30, 30, var(--blur-opacity-dark));
-}
-
-.cbi-rowstyle-1 {
-    background-color: rgba(36, 36, 37, var(--blur-opacity-dark));
-}
-
 .cbi-rowstyle-2 .cbi-button-up,
 .cbi-rowstyle-2 .cbi-button-down,
 body:not(.Interfaces) .cbi-rowstyle-2:first-child {
@@ -355,11 +338,6 @@ h4 {
 
 abbr {
     color: #5e72e4;
-}
-
-div>table>tbody>tr:nth-of-type(2n),
-div>.table>.tbody>.tr:nth-of-type(2n) {
-    background-color: rgba(36, 36, 37, var(--blur-opacity-dark));
 }
 
 #content_syslog {
@@ -576,13 +554,9 @@ td.cbi-value-field var {
 
 .node-services-vssr .cbi-section-table-row {
     color: #ccc;
-    background-color: #3c3c3c !important;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .35)
 }
 
 .node-services-vssr .cbi-section-table-row.fast {
-    background: #483d8b !important;
-    background: var(--dark-primary) !important;
     color: #fff;
 }
 
@@ -665,14 +639,12 @@ header .fill .status span[data-style="active"] {
     background-color: darkolivegreen !important;
 }
 
-#cbi-wireless .td,
-#cbi-network .tr:first-child>.td,
 .table[width="100%"]>.tr:first-child>.td,
 [data-page="admin-network-diagnostics"] .tr>.td,
 .tr.table-titles>.th,
 .tr.cbi-section-table-titles>.th {
     background-color: rgba(36, 36, 37, var(--blur-opacity-dark));
-    border-bottom: black 1px solid !important;
+    border-bottom: none !important;
 
 }
 
@@ -864,10 +836,6 @@ input,
 
 .cbi-dropdown .preview {
     color: #ccc;
-}
-
-.cbi-section-table-row {
-    background-color: rgba(30, 30, 30, var(--blur-opacity-dark)) !important;
 }
 
 .modal {
@@ -1179,10 +1147,6 @@ input,
             em {
                 color: #ccc !important;
             }
-        }
-
-        >table>.cbi-section-table-row[data-title]::before {
-            background-color: rgba(36, 36, 37, var(--blur-opacity-dark)) !important;
         }
     }
 }
