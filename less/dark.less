@@ -35,13 +35,10 @@ body {
 }
 
 .login-page .login-container {
+    background-color: rgba(0, 0, 0, var(--blur-opacity-dark));
+    backdrop-filter: blur(var(--blur-radius-dark));
 
     .login-form {
-        background-color: #1e1e1e;
-        -webkit-backdrop-filter: blur(var(--blur-radius-dark)) brightness(0);
-        backdrop-filter: blur(var(--blur-radius-dark)) brightness(0);
-        background-color: rgba(0, 0, 0, var(--blur-opacity-dark));
-
         .brand {
             color: #adb5bd;
         }
@@ -53,13 +50,9 @@ body {
                 }
 
                 input {
-                    background-color: transparent !important;
+                    background-color: #0000008a !important;
                     color: #adb5bd;
-                    border-bottom: #adb5bd 1px solid !important;
-                    border-radius: 0 !important;
-                    border-top: none !important;
-                    border-left: none !important;
-                    border-right: none !important;
+                    border: #4d4d4d 1px solid !important;
                     box-shadow: none;
                 }
 
