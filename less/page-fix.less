@@ -817,36 +817,18 @@
 
 // wireless
 /* wireless overview */
-#cbi-wireless {
-    >#wifi_assoclist_table {
-        >.tr {
-            box-shadow: inset 1px -1px 0 #ddd, inset -1px -1px 0 #ddd;
-
-            &.placeholder {
-                >.td {
-                    right: 2rem;
-                    bottom: 2rem;
-                    left: 2rem;
-                    border-top: thin solid #ddd !important;
-                }
-            }
-
-            &.table-titles {
-                box-shadow: inset 1px 0 0 #ddd, inset -1px 0 0 #ddd;
-
-                >.th {
-                    border-bottom: thin solid #ddd;
-                    box-shadow: 0 -1px 0 0 #ddd;
-                }
-            }
-        }
-    }
-}
-
 #wifi_assoclist_table {
     >.tr {
         >.td[data-title="RX Rate / TX Rate"] {
             width: 23rem;
+        }
+
+        &.placeholder {
+            >.td {
+                right: 2rem;
+                bottom: 2rem;
+                left: 2rem;
+            }
         }
     }
 }

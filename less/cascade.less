@@ -297,7 +297,7 @@ select[multiple="multiple"] {
 .Firewall form,
 #cbi-network>.cbi-section-node,
 #cbi-wireless>.cbi-section-node,
-#cbi-wireless>#wifi_assoclist_table,
+#wifi_assoclist_table,
 [data-tab-title],
 [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear),
 [data-page="admin-system-opkg"] #maincontent>.container {
@@ -310,8 +310,6 @@ select[multiple="multiple"] {
   border: 0;
 
   border-radius: 0.25rem;
-  background-color: #fff;
-  box-shadow: 0 0 1rem 0 rgba(136, 152, 170, .15);
 
   &:last-child {
     margin: 0;
@@ -469,8 +467,7 @@ tr>th,
 .tr>.td,
 .tr>.th,
 .cbi-section-table-row::before,
-#cbi-wireless>#wifi_assoclist_table>.tr:nth-child(2) {
-  border-top: thin solid #ddd;
+#wifi_assoclist_table>.tr:nth-child(2) {
   padding: 1.1em 1.25rem;
 }
 
