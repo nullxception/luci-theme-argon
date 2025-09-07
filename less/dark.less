@@ -72,11 +72,6 @@ body {
 
 }
 
-header::after {
-    background-color: transparent !important;
-}
-
-
 .main {
     .main-left {
 
@@ -213,10 +208,6 @@ input:-webkit-autofill {
 
 .cbi-section em {
     color: #ccc;
-}
-
-header.bg-primary {
-    background-color: transparent !important;
 }
 
 .cbi-map-descr {
@@ -778,7 +769,10 @@ td>.ifacebadge,
 [data-page*="network-wireless"] #wifi_assoclist_table,
 [data-tab-title],
 [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear),
-[data-page="admin-system-opkg"] #maincontent>.container {
+[data-page="admin-system-opkg"] #maincontent>.container,
+[data-page="admin-status-processes"] #view>table,
+[data-page="admin-system-package-manager"] #view,
+.nft-chain {
     background: rgba(20, 20, 20, var(--blur-opacity-dark)) !important;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(var(--blur-radius-dark));
@@ -1198,11 +1192,6 @@ input,
 .btn {
     background-color: rgb(112, 112, 112);
     color: #fff;
-}
-
-.nft-chain {
-    background-color: rgba(20, 20, 20, var(--blur-opacity-dark));
-    backdrop-filter: blur(var(--blur-radius-dark));
 }
 
 .label-success {

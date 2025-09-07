@@ -297,10 +297,13 @@ select[multiple="multiple"] {
 .Firewall form,
 #cbi-network>.cbi-section-node,
 #cbi-wireless>.cbi-section-node,
-#wifi_assoclist_table,
+[data-page*="network-wireless"] #wifi_assoclist_table,
 [data-tab-title],
 [data-page^="admin-system-admin"]:not(.node-main-login) .cbi-map:not(#cbi-dropbear),
-[data-page="admin-system-opkg"] #maincontent>.container {
+[data-page="admin-system-opkg"] #maincontent>.container,
+[data-page="admin-status-processes"] #view>table,
+[data-page="admin-system-package-manager"] #view,
+.nft-chain {
   font-family: inherit;
   font-weight: normal;
   font-style: normal;
@@ -310,6 +313,8 @@ select[multiple="multiple"] {
   border: 0;
 
   border-radius: 0.25rem;
+  background: rgba(220, 220, 220, var(--blur-opacity)) !important;
+  backdrop-filter: blur(var(--blur-radius));
 
   &:last-child {
     margin: 0;
